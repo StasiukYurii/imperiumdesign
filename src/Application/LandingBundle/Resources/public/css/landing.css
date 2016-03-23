@@ -1,3 +1,7 @@
+body {
+    overflow-x: hidden;
+}
+
 .bg-grey {
     background: #eeeeee;
 }
@@ -51,6 +55,7 @@ section .footer  {
 section .footer .row, section .footer .row .col-xs-3, section .footer .row .col-xs-2{
     height: 100%;
     margin: 0;
+    transition: 0s;
 }
 
 section .footer .col-xs-3, section .footer .col-xs-2 {
@@ -63,13 +68,54 @@ section .footer a {
     color: white;
     display: block;
     height: 100%;
-    padding-top: 25px;
 }
 
 section .footer a:hover {
     background: white;
     color: #40A2C5;
     text-decoration: none;
+}
+
+section .footer a:after {
+    transition: all .4s;
+    position:absolute; /*or absolute*/
+    z-index:100000; /*a number that's more than the modal box*/
+    top: -45px; right: 152px;
+}
+
+section .footer .col-xs-3:first-child a:after {
+    content: url(../images/interior.png);
+}
+
+section .footer .col-xs-3:first-child a:hover::after {
+    content:url(../images/interior-white.png);
+}
+
+section .footer .col-xs-3:nth-child(2) a:after {
+    top: -60px;
+    content: url(../images/exterior.png);
+}
+
+section .footer .col-xs-3:nth-child(2) a:hover::after {
+    content: url(../images/exterior-white.png);
+}
+
+section .footer .col-xs-3:nth-child(3) a:after {
+    top: -59px;
+    content: url(../images/web.png);
+}
+
+section .footer .col-xs-3:nth-child(3) a:hover::after {
+    content: url(../images/web-white.png);
+}
+
+section .footer .col-xs-3:nth-child(4) a:after {
+    top: -59px;
+    content: url(../images/special.png);
+}
+
+section .footer .col-xs-3:nth-child(4) a:hover::after {
+    content: url(../images/special-white.png);
 }
 
 #mainNav .container-fluid {
@@ -100,3 +146,77 @@ section .footer a:hover {
     background: #0083B2;
     color: white;
 }
+
+.bg-blue {
+    background: #0083B2;
+}
+
+
+/*=========== SERVICES ===========*/
+#services {
+    color: white;
+}
+
+#services .section-heading {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 5em;
+}
+
+#services .section-heading-dimmed {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 3em;
+    color: #389EC3;
+    margin-top: 10px;
+}
+
+#services .section-heading-underlined {
+    position: absolute; left: 0;
+    bottom: 20%;
+    text-align: center;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 3em;
+    color: #389EC3;
+    margin-top: 10px;
+    text-decoration: underline;
+}
+/*=========== END SERVICES ===========*/
+
+
+/*=========== PORTFOLIO ===========*/
+.our-works-heading {
+    color: #363641;
+    font-weight: bold;
+    font-size: 6em;
+}
+
+.portfolio-box {
+    transition: all .2s ease-in-out;
+}
+
+.portfolio-box:hover {
+    z-index: 500;
+    transform: scale(1.1);
+}
+
+.portfolio-box .portfolio-box-caption {
+    background: rgba(0, 131, 178, 0.8);
+}
+/*=========== END PORTFOLIO ===========*/
+
+/*=========== MEDIA ===========*/
+#media h2 {
+    font-size: 5em;
+    font-weight: bold;
+    color: #BEBEBE;
+}
+
+#media iframe {
+    width: 100%;
+    min-height: 600px;
+    height: 80%;
+}
+/*=========== END MEDIA ===========*/
