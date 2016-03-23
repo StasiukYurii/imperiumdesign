@@ -1,13 +1,17 @@
 .bg-grey {
-    background: #EEEEEE;
+    background: #eeeeee;
 }
-
+.section-heading {
+    color: #b2b2b2;
+}
 .section-content {
     position: absolute;
     top: 25%;
     padding-left: 30px;
 }
-
+section .services {
+    background-color: #b2b2b2;
+}
 .header-1 {
     font-weight: bold;
     font-size: 6em;
