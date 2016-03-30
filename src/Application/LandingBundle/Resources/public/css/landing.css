@@ -1,13 +1,20 @@
 body {
     overflow-x: hidden;
+    background: #eeeeee;
 }
 
 .bg-grey {
     background: #eeeeee;
 }
-.section-heading {
-    color: #b2b2b2;
+
+.navbar-collapse {
+    padding-top: 25px;
 }
+
+.navbar-brand img {
+    padding-top: 9px;
+} 
+
 .section-content {
     position: absolute;
     top: 25%;
@@ -52,7 +59,8 @@ section .footer  {
     height: 75px;
 }
 
-section .footer .row, section .footer .row .col-xs-3, section .footer .row .col-xs-2{
+section .footer .row, section .footer .row .col-xs-3,
+section .footer .row .col-xs-2{
     height: 100%;
     margin: 0;
     transition: 0s;
@@ -119,12 +127,12 @@ section .footer .col-xs-3:nth-child(4) a:hover::after {
 }
 
 #mainNav .container-fluid {
-    padding: 20px 100px;
+    padding: 0px 100px 25px 25px;
     background-color: #303030;
 }
 
 #mainNav .navbar-nav a {
-    padding: 10px 30px;
+    padding: 10px 20px;
     -webkit-transition: .4s;
     -moz-transition: .4s;
     -ms-transition: .4s;
@@ -207,7 +215,7 @@ section .footer .col-xs-3:nth-child(4) a:hover::after {
 }
 /*=========== END PORTFOLIO ===========*/
 
-/*=========== MEDIA ===========*/
+/*=========== MEDIA ===========*/  
 #media h2 {
     font-size: 5em;
     font-weight: bold;
@@ -220,3 +228,41 @@ section .footer .col-xs-3:nth-child(4) a:hover::after {
     height: 80%;
 }
 /*=========== END MEDIA ===========*/
+/*=========== CONTACT US ===========*/
+#contact h2 {
+    font-size: 5em;
+    font-weight: bolder;
+    color: #b2b2b2;
+}
+#contact .subheading {
+    color: #777777;
+    font-size: 12px;
+    padding-top: 73px;
+}
+#contact .location-info {
+    color: #0083b2;
+    font-size: 15px;
+}
+
+.location-info img{
+      display: block;
+      margin: 0 auto; 
+      padding-bottom: 19px;
+    }
+#contact .schedule {
+    color: #777777;
+    font-size: 12px;
+}
+
+hr{
+    border: none; 
+    background-color: #777777; 
+    color: #777777; 
+    height: 1px;
+   }
+   #contact .order {
+    background: #fbc02d;
+    color: #303030;
+    padding-top: 11px;
+    padding: 20px 20px 0px 20px;
+   }
