@@ -236,7 +236,7 @@ section .footer .col-xs-3:nth-child(4) a:hover::after {
 }
 #contact .subheading {
     color: #777777;
-    font-size: 12px;
+    font-size: 15px;
     padding-top: 73px;
 }
 #contact .location-info {
@@ -251,11 +251,12 @@ section .footer .col-xs-3:nth-child(4) a:hover::after {
     }
 #contact .schedule {
     color: #777777;
-    font-size: 12px;
+    font-size: 15px;
+    display: inline;
 }
 
 hr{
-    border: none; 
+    border: none;
     background-color: #777777; 
     color: #777777; 
     height: 1px;
@@ -263,6 +264,6 @@ hr{
    #contact .order {
     background: #fbc02d;
     color: #303030;
-    padding-top: 11px;
-    padding: 20px 20px 0px 20px;
+    
    }
+ 
